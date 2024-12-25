@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Spor Kayıt Merkezi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Genel Tasarım */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+
+        /* Navbar */
+        .navbar-dark {
+            background-color: #0f3460;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://evwyss75toh.exactdn.com/storage/2024/10/28-24.png?strip=all&lossy=1&ssl=1') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-section .btn {
+            background-color: #ffcc00;
+            color: #000;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .hero-section .btn:hover {
+            background-color: #ffd633;
+        }
+
+        /* Slider */
+        .slider {
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+            margin: 30px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .navigation button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .navigation button:hover {
+            background-color: #ffcc00;
+            color: #000;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f3460;
+            color: #ccc;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">E-Spor Merkezi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="proje3.html">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletsim2.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div>
+            <a href="esportakimimiz.html" class="btn btn-primary btn-lg">E-Spor Takımlarımıza Göz At</a>
+        </div>
+    </section>
+
+    <!-- Fotoğraf Slider -->
+    <div class="slider">
+        <div class="slides" id="slides">
+            <img src="https://www.gaming.gen.tr/wp-content/uploads/2023/10/counter-strike-2-simdi-ucretsiz-bir-sekilde-oynanabilir-20231002-1.jpg" alt="Fotoğraf 1">
+            <img src="https://images.yourstory.com/cs/wordpress/2018/11/PUBG-1.png" alt="Fotoğraf 2">
+            <img src="https://www.esporgazetesi.com/wp-content/uploads/2020/12/agent-14-1.jpg" alt="Fotoğraf 3">
+            <img src="https://www.animationxpress.com/wp-content/uploads/2020/08/5b479d8c744a9820008b48ff.jpg" alt="Fotoğraf 4">
+        </div>
+        <div class="navigation">
+            <button onclick="prevSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 E-Spor Kayıt Merkezi. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        let currentIndex = 0;
+        const slides = document.getElementById("slides");
+        const slideCount = slides.children.length;
+
+        function showSlide(index) {
+            slides.style.transform = `translateX(${-index * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slideCount;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+            showSlide(currentIndex);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

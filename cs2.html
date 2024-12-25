@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 2 Takımlarımız</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+
+        /* Navbar */
+        .navbar-dark {
+            background-color: #0f3460;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWbOe5Bklor41j556q8LJEIlSMZptiLk-Few&s') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Champion Team Section */
+        .team-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .team-card {
+            background-color: #0f3460;
+            border: 1px solid #ffd633;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+
+        .team-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .team-card h3 {
+            color: #ffd633;
+            padding: 20px;
+            font-size: 1.5rem;
+            background-color: #1a1a2e;
+        }
+
+        .team-card p {
+            padding: 15px;
+            background-color: #0f3460;
+            color: #ccc;
+        }
+
+        .team-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Video Section */
+        .video-container {
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f3460;
+            color: #ccc;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="girişoldu.html">E-Spor Merkezi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="proje3.html">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proje2.html">Kayıt Ol</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>CS 2 Takımlarımız</h1>
+    </section>
+
+    <!-- Team Champions Section -->
+    <section class="team-section container">
+        <div class="row">
+            <!-- Team 1 -->
+            <div class="col-md-3">
+                <div class="team-card">
+                    <img src="https://cdn.escharts.com/uploads/public/608/7e9/9f8/6087e99f88f73113046300.png" alt="FaZe Clan">
+                    <h3>FaZe Clan</h3>
+                    <p>2023 CS 2 Büyük Şampiyonları. Üst düzey stratejiler ve ekip çalışmasıyla rekabete üstünlük sağlamak</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/your_video_id_here" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team 2 -->
+            <div class="col-md-3">
+                <div class="team-card">
+                    <img src="https://cdn.escharts.com/uploads/public/617/c6a/318/617c6a3183b6d212572956.png" alt="Astralis">
+                    <h3>Astralis</h3>
+                    <p>2022 CS 2 World Cup Champions. Known for their aggressive playstyle and unmatched precision.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/your_video_id_here" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team 3 -->
+            <div class="col-md-3">
+                <div class="team-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMXkleRPcwT2o7L9dV54VgntEmsIBu5QXtNQ&s" alt="G2 Esports">
+                    <h3>G2 Esports</h3>
+                    <p>2021 CS 2 Regional Champions. A team that made waves with their tactical gameplay and creativity.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/your_video_id_here" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team 4 -->
+            <div class="col-md-3">
+                <div class="team-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Natus_Vincere_logo_2018.svg/2560px-Natus_Vincere_logo_2018.svg.png" alt="Na'Vi">
+                    <h3>Na'Vi</h3>
+                    <p>Na'Vi, e-spor dünyasında yıllardır kazandığı şampiyonluklarla adından söz ettiriyor.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/your_video_id_here" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 E-Spor Kayıt Merkezi. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

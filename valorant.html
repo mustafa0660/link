@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant E-Spor Takımları</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0F1923;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #FF4655;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .team-card {
+            background-color: #1E2A37;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .team-logo {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .team-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .team-name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #FF4655;
+        }
+
+        .team-description {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .video-container {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 8px;
+        }
+
+        nav {
+            background-color: #1E2A37;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: #FF4655;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1E2A37;
+            color: #FFFFFF;
+            margin-top: 20px;
+        }
+
+        /* Slideshow Styles */
+        .slideshow-container {
+            max-width: 1000px;
+            height: 500px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .mySlides {
+            display: none;
+            text-align: center;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .dot-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <a href="girişoldu.html">Anasayfa</a>
+            <a href="iletisim.html">İletişim</a>
+        </div>
+    </nav>
+
+    <!-- Valorant Teams Section -->
+    <div class="container">
+        <h1>Valorant E-Spor Takımları</h1>
+        <div class="team-grid">
+            <!-- Team 1 -->
+            <div class="team-card">
+                <img src="../mustafa proje/resimler/PaperRex.png" alt="Team 1 Logo" class="team-logo">
+                <div class="team-content">
+                    <h2 class="team-name">Paper Rex</h2>
+                    <p class="team-description">Team Liquid, uluslararası arenada Valorant şampiyonluklarıyla bilinen bir devdir.</p>
+                </div>
+                <!-- Video for Team 1 -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/your_video_id_here" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Team 2 -->
+            <div class="team-card">
+                <img src="../mustafa proje/resimler/BOOMEsports.png" alt="Team 2 Logo" class="team-logo">
+                <div class="team-content">
+                    <h2 class="team-name">BOOM Esports</h2>
+                    <p class="team-description">Fnatic, cesur oyun stratejileri ve takım çalışmasıyla rakiplerini domine ediyor.</p>
+                </div>
+                <!-- Video for Team 2 -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/your_video_id_here" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Team 3 -->
+            <div class="team-card">
+                <img src="../mustafa proje/resimler/Sentinels.png" alt="Team 3 Logo" class="team-logo">
+                <div class="team-content">
+                    <h2 class="team-name">Sentinels</h2>
+                    <p class="team-description">Sentinels, Valorant sahnesinde agresif oyun tarzıyla tanınır.</p>
+                </div>
+                <!-- Video for Team 3 -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/your_video_id_here" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Team 4 -->
+            <div class="team-card">
+                <img src="../mustafa proje/resimler/FUTEsports.png" alt="Team 4 Logo" class="team-logo">
+                <div class="team-content">
+                    <h2 class="team-name">FUT Esports</h2>
+                    <p class="team-description">G2 Esports, Valorant sahnesinde stratejik oyun tarzıyla öne çıkar.</p>
+                </div>
+                <!-- Video for Team 4 -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/your_video_id_here" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="../mustafa proje/resimler/valo2.webp" alt="Slideshow Image 1">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../mustafa proje/resimler/valo4.webp" alt="Slideshow Image 2">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../mustafa proje/resimler/valo3.webp" alt="Slideshow Image 3">
+                <div class="text"></div>
+            </div>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 E-Spor Merkezi. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1;}
+
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>

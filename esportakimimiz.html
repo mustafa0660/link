@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tıklanabilir Oyun Kutucukları</title>
+    <style>
+        /* Genel Ayarlar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #ffcc00;
+        }
+
+        /* Oyun Kutucukları */
+        .game-container {
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .game-box {
+            background-color: #16213e;
+            border: 2px solid #0f3460;
+            border-radius: 10px;
+            margin: 10px 0;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .game-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+        }
+
+        .game-box img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .game-box h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .game-box p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oyunlarımız</h1>
+    <div class="game-container">
+        <a href="cs2.html" class="game-box">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1729703045" alt="CS 2">
+            <div>
+                <h2>CS 2</h2>
+                <p>Aksiyon dolu bir macera sizi bekliyor.</p>
+            </div>
+        </a>
+        <a href="valorant.html" class="game-box">
+            <img src="https://store-images.s-microsoft.com/image/apps.21507.13663857844271189.4c1de202-3961-4c40-a0aa-7f4f1388775a.20ed7782-0eda-4f9d-b421-4cc47492edc6" alt="Valorant">
+            <div>
+                <h2>Valorant</h2>
+                <p>Strateji yeteneklerinizi test edin.</p>
+            </div>
+        </a>
+        <a href="pubg.html" class="game-box">
+            <img src="https://play-lh.googleusercontent.com/jRC1B-vE-Y4qG5GasrCo-NjNgehL2fyc8SkOGvypQgKrqGOFH7gwZ_c0TI5v0QfqXw=w240-h480-rw" alt="Pubg">
+            <div>
+                <h2>Pubg</h2>
+                <p>Eğlence ve aksiyonun birleşimi burada.</p>
+            </div>
+        </a>
+        <a href="#" class="game-box">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTZlMmIxM2EtN2Y4Zi00M2ZhLTk3NzgtNjJmZTU0MTQ3YjcwXkEyXkFqcGc@._V1_.jpg" alt="Fortnite">
+            <div>
+                <h2>Fortnite</h2>
+                <p>Heyecan verici çok oyunculu deneyim.</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
